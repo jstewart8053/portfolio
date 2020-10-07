@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  outline: 0px;
+  outline-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #e8e8e8;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway";
+}
+
+.preflex {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2381f5df' fill-opacity='.5'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  border-top: 8em solid #008e76;
+}
+
+.flexContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 200px;
+  padding-bottom: 100px;
+  transform: translatey(50px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+li {
+  float: left;
+  width: 25%;
+  font-size: 16px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: all 600ms ease-out;
+  background-color: #ff6655;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+
+li a:hover {
+  background-color: #fb4737;
+  color: white;
+}
+
+#starter {
+   align-self: stretch;
+  margin-bottom: 30px;
+}
+
+#title {
+  transform: translate(50px, 50px) scale(0.8);
+  fill: #484848;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+#heart {
+  transform: translate(290px, -40px) scale(1);
+  stroke: white;
+  stroke-width: 1;
+  stroke-dasharray: 250;
+  stroke-dashoffset: -250;
+  animation: change 3s linear 3.7s 1;
+  animation-fill-mode: forwards;
+  transition: all 900ms;
+}
+
+@keyframes change {
+  0% {
+    stroke-dashoffset: 250;
+    stroke-opacity: 1;
+  }
+  87.5% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+
+.pulse {
+  fill: none;
+  stroke: #fc6f62;
+  stroke-miterlimit: 4;
+  stroke-width: 1.5;
+  stroke-dasharray: 756 755;
+  stroke-dashoffset: -756;
+  animation: dash 3s linear 1000ms 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: -756;
+  }
+  87.5% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#breathe {
+  font-size: 65px;
+  letter-spacing: 0px;
+  transition: all 600ms ease-in;
+}
+
+#life {
+  font-family: "Sacramento";
+  font-size: 72px;
+}
+#block {
+  position: relative;
+  fill: #00bfa5;
+  opacity: 1;
+  transition: all 2s 0.5s;
+}
+
+#name {
+  text-rendering: geometricPrecision;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  fill: white;
+  letter-spacing: 0px;
+  word-spacing: -9px;
+  font-size: 20px;
+  margin: 0px;
+  opacity: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#front {
+  text-rendering: geometricPrecision;
+  font-size: 19px;
+  fill: white;
+  letter-spacing: 8px;
+  padding: 0px;
+  margin: 0px;
+  opacity: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.infoContain {
+  max-height: 20%;
+  max-width: 80%;
+  margin-top: 30px;
+  margin: auto;
+  padding: 25px;
+  background: #ff6655;
+  transition: all 600ms;
+}
+
+.infoBox {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  font: 18px/1.5 "Raleway";
+  color: #f5f5f5;
+  overflow: auto;
+  transition: all 800ms;
+}
+
+#infoIntro span:first-child {
+  color: #ff6655;
+  margin-top: 40px;
+  margin-left: 40px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.24);
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.bar {
+  align-self: center;
+  width: 100%;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #00bfa5;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+#aboutsvg {
+  width: 80%;
+  object-fit: fill;
+  border-radius: 2px;
+  background-color: white;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+#infoAbout {
+  font: 18px/1.5 "Raleway";
+  text-align: left;
+  overflow: auto;
+}
+
+#infoAbout::first-line {
+  font-weight: bold;
+  font-size: 40px;
+}
+.shadow-lift:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+section {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.port {
+  overflow: hidden;
+  width: 425px;
+  height: 351px;
+  border-radius: 2px;
+  margin: 20px;
+  transition: 1s all;
+  opacity: 0.6;
+}
+.port:hover {
+  transform: scale(1.2);
+  overflow: visible;
+  opacity: 1;
+}
+
+#infoContact {
+  overflow: auto;
+  text-align: left;
+}
+
+.header {
+  padding: 8px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+     font-variant: small-caps;
+
+  font-size: 2em;
+  background: #008e76;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+  
+input {
+  width: 200px;
+  height: 25px;
+  margin-left: 15px;
+  outline: 1px solid rgba(0, 142, 118, .3);
+
+}
+input:focus,
+textarea:focus {
+outline-color: yellow;
+}
+
+textarea {
+  resize: horizontal;
+  display: block;
+  margin: 15px;
+  outline: 1px solid rgba(0, 142, 118, .3);
+}
+
+ aside {
+   height: 40px;
+  text-align: center;
+   font-variant: small-caps;
+   line-height: 2;
+   font-size: 1.5em;
+  width: 80px;
+  border-radius: 8px;
+    background: #008e76;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 400ms;
+}
+
+aside a {
+  text-decoration: none;
+  color: white;
+}
+
+ aside:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+ aside:active {
+  background: #00bfa5;
+  outline: none;
+}
+
+#send {
+  font-size: 1em;
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+
+#top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  line-height: 2.7;
+  border-radius: 50px;
+}
+footer {
+  margin-left: 8px;
+  poition: relative;
+  font: 16px/1.5 "Raleway";
+}
+b {
+  color: red;
+  font-size: 30px;
+}
+
+.sm-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+
+.med-shadow,
+#dropShadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.smFont {
+  font-size: 20px;
+  font-family: Raleway;
+}
